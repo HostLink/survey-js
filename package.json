@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name hostlink-survey-js ./src/index.js",
+    "build": "vue-cli-service build --target lib ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "main": "dist/hostlink-survey.common.js",
