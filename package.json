@@ -1,13 +1,16 @@
 {
   "name": "hostlink-survey-js",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name hostlink-survey-js ./src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "main": "dist/hostlink-survey.common.js",
   "dependencies": {
+    "@editorjs/editorjs": "^2.22.2",
+    "@editorjs/header": "^2.6.2",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
