@@ -1,36 +1,37 @@
 import Vue from 'vue';
-import Radio from './Radio.vue';
+import Text from './Text.vue';
+
 export default class {
     static get toolbox() {
         return {
-            title: "Radio",
-            icon: '<i class="far fa-check-circle"></i>'
+            title: "Text",
+            icon: '<i class="fa fa-edit"></i>'
         };
     }
 
     constructor({ data }) {
-        console.log("radio construct", data);
         this.data = data;
-        this.value = Object.assign({}, data);
+        this.value = data.value || "";
     }
 
-
     render() {
+
         this.div = document.createElement('div');
 
         let self = this;
+
+
         setTimeout(() => {
             this.v = new Vue({
                 render: h => {
-                    return h(Radio, {
+                    return h(Text, {
                         props: {
-                            value: self.data
+                            value: self.value
                         },
                         on: {
                             input(event) {
-                                console.log("radio input");
                                 console.log(event);
-                                self.data = event;
+                                self.value = event;
                             }
                         }
                     });
@@ -39,16 +40,13 @@ export default class {
         }, 0);
 
         return this.div;
-    }
 
+    }
 
     save() {
-        console.log("radio save");
         return {
-            value: this.value.value,
-            answers: this.value.answers
-        }
+            value: this.value
+        };
     }
-
 }
 

@@ -4,7 +4,8 @@
 
     <hl-survey ref="survey" v-model="data"></hl-survey>
     <button @click="save">Save</button>
-    <button @click="load">load</button>
+    <button @click="load">Load</button>
+    <button @click="clear">Clear</button>
   </div>
 </template>
 
@@ -22,6 +23,14 @@ export default {
         time: 1641446283462,
         blocks: [
           {
+            id: "radio1",
+            type: "radio",
+            data: {
+              value: "hello",
+              answers: ["test1"],
+            },
+          },
+          {
             id: "wl5ygLA7ZD",
             type: "paragraph",
             data: {
@@ -37,7 +46,7 @@ export default {
           },
           {
             id: "a1",
-            type: "input",
+            type: "text",
             data: {
               value: "hello world",
             },
@@ -52,11 +61,22 @@ export default {
       await this.$refs.survey.save();
       console.log(this.data);
     },
+    clear() {
+      this.data = null;
+    },
 
     load() {
       this.data = {
         time: 1641446283462,
         blocks: [
+          {
+            id: "radio1",
+            type: "radio",
+            data: {
+              value: "hello",
+              answers: ["test1"],
+            },
+          },
           {
             id: "wl5ygLA7ZD",
             type: "paragraph",
@@ -73,7 +93,7 @@ export default {
           },
           {
             id: "a1",
-            type: "input",
+            type: "text",
             data: {
               value: "hello world2",
             },
@@ -86,12 +106,3 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

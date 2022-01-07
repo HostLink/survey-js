@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import TestVue from './TestVue.vue';
 
+
 export default class {
+
 
 
     static get toolbox() {
@@ -13,6 +15,7 @@ export default class {
 
     render() {
         this.div = document.createElement('div');
+
         setTimeout(() => {
             this.v = new Vue({
                 render: h => h(TestVue)

@@ -1,26 +1,50 @@
+import Vue from 'vue';
+import Rating from './Rating.vue';
 export default class {
-  static get toolbox() {
-    return {
-      title: "Rating",
-      icon: '<i class="fas fa-star"></i>'
-    };
-  }
+	static get toolbox() {
+		return {
+			title: "Rating",
+			icon: '<i class="fa fa-star"></i>'
+		};
+	}
 
-  render() {
-    let div = document.createElement('div');
-    div.append("[Rating] Question: ");
-    div.append(document.createElement('input'));
-    return div;
-  }
+	constructor({ data }) {
+		this.data = data;
+		this.value = data.value || "";
+	}
 
-  save(blockContent) {
+	render() {
 
-    return {
-      type: "rating",
-      data: {
-        question: blockContent.querySelector('input').value,
-      }
-    };
-  }
+		this.div = document.createElement('div');
+
+		let self = this;
+
+
+		setTimeout(() => {
+			this.v = new Vue({
+				render: h => {
+					return h(Rating, {
+						props: {
+							value: self.value
+						},
+						on: {
+							input(event) {
+								self.value = event;
+							}
+						}
+					});
+				}
+			}).$mount(this.div);
+		}, 0);
+
+		return this.div;
+
+	}
+
+	save() {
+		return {
+			value: this.value
+		};
+	}
 }
 

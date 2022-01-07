@@ -12,9 +12,11 @@
     "@editorjs/header": "^2.6.2",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@editorjs/raw": "^2.3.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",

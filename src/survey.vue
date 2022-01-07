@@ -5,12 +5,12 @@
 <script>
 import EditorJS from "@editorjs/editorjs";
 import Header from "@editorjs/header";
-import Rating from "./Rating";
-import Input from "./Input.js";
+import Rating from "./Rating.js";
+import Text from "./Text.js";
 import Radio from "./Radio";
 import Checkbox from "./Checkbox";
 import TestVue from "./TestVue.js";
-
+import RawTool from "@editorjs/raw";
 export default {
   name: "hl-survey",
   props: {
@@ -20,21 +20,16 @@ export default {
     },
   },
   watch: {
-    value: {
-      handler(val) {
-        this.editor.clear();
-        this.editor.render(val);
-      },
-      deep: true,
-    },
+  
   },
   mounted() {
     this.editor = new EditorJS({
       holder: this.$el,
       tools: {
+        raw: RawTool,
         header: Header,
         rating: Rating,
-        input: Input,
+        text: Text,
         radio: Radio,
         checkbox: Checkbox,
         test: TestVue,
