@@ -9,7 +9,7 @@ import Rating from "./Rating.js";
 import Text from "./Text.js";
 import Radio from "./Radio";
 import Checkbox from "./Checkbox";
-import TestVue from "./TestVue.js";
+//import TestVue from "./TestVue.js";
 import RawTool from "@editorjs/raw";
 export default {
   name: "hl-survey",
@@ -41,7 +41,7 @@ export default {
         text: Text,
         radio: Radio,
         checkbox: Checkbox,
-        test: TestVue,
+        //test: TestVue,
       },
       data: JSON.parse(JSON.stringify(this.value)),
       //ata: this.value,
