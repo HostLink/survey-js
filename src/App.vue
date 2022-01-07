@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import HLSurvey from "./survey.vue";
+import HLSurvey from "./Survey.vue";
 export default {
   name: "App",
   components: {
@@ -19,41 +19,7 @@ export default {
   created() {},
   data() {
     return {
-      data: {
-        time: 1641446283462,
-        blocks: [
-          {
-            id: "radio1",
-            type: "radio",
-            data: {
-              value: "hello",
-              answers: ["test1"],
-            },
-          },
-          {
-            id: "wl5ygLA7ZD",
-            type: "paragraph",
-            data: {
-              text: "a",
-            },
-          },
-          {
-            id: "S11e4iOlzL",
-            type: "paragraph",
-            data: {
-              text: "def=",
-            },
-          },
-          {
-            id: "a1",
-            type: "text",
-            data: {
-              value: "hello world",
-            },
-          },
-        ],
-        version: "2.22.2",
-      },
+      data: null,
     };
   },
   methods: {
@@ -74,28 +40,7 @@ export default {
             type: "radio",
             data: {
               value: "hello",
-              answers: ["test1"],
-            },
-          },
-          {
-            id: "wl5ygLA7ZD",
-            type: "paragraph",
-            data: {
-              text: "aaaa",
-            },
-          },
-          {
-            id: "S11e4iOlzL",
-            type: "paragraph",
-            data: {
-              text: "def=",
-            },
-          },
-          {
-            id: "a1",
-            type: "text",
-            data: {
-              value: "hello world2",
+              answers: [{ value: "test1" }],
             },
           },
         ],

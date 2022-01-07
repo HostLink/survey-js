@@ -9,9 +9,7 @@ export default class {
     }
 
     constructor({ data }) {
-        console.log("radio construct", data);
-        this.data = data;
-        this.value = Object.assign({}, data);
+        this.value = data;
     }
 
 
@@ -24,13 +22,11 @@ export default class {
                 render: h => {
                     return h(Radio, {
                         props: {
-                            value: self.data
+                            value: self.value
                         },
                         on: {
                             input(event) {
-                                console.log("radio input");
-                                console.log(event);
-                                self.data = event;
+                                self.value = event;
                             }
                         }
                     });
@@ -43,11 +39,10 @@ export default class {
 
 
     save() {
-        console.log("radio save");
         return {
             value: this.value.value,
             answers: this.value.answers
-        }
+        };
     }
 
 }

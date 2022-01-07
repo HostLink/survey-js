@@ -1,3 +1,5 @@
+import Vue from 'vue';
+import Checkbox from './Checkbox.vue';
 export default class {
     static get toolbox() {
         return {
@@ -6,37 +8,42 @@ export default class {
         };
     }
 
-    render() {
-        let div = document.createElement('div');
-        div.append("[Checkbox] Question: ");
-        div.append(document.createElement('input'));
-
-        let button = document.createElement("button");
-        button.append("Add Option");
-        let d = document.createElement("div");
-        d.append(button);
-        div.append(d);
-
-
-        button.addEventListener("click", () => {
-
-            let d = document.createElement("div");
-            let option = document.createElement("input");
-            d.append(option);
-            div.append(d);
-        });
-
-        return div;
+    constructor({ data }) {
+        this.value = data;
     }
 
-    save(blockContent) {
 
+    render() {
+        this.div = document.createElement('div');
+
+        let self = this;
+        setTimeout(() => {
+            this.v = new Vue({
+                render: h => {
+                    return h(Checkbox, {
+                        props: {
+                            value: self.value
+                        },
+                        on: {
+                            input(event) {
+                                self.value = event;
+                            }
+                        }
+                    });
+                }
+            }).$mount(this.div);
+        }, 0);
+
+        return this.div;
+    }
+
+
+    save() {
         return {
-            type: "rating",
-            data: {
-                question: blockContent.querySelector('input').value,
-            }
+            value: this.value.value,
+            answers: this.value.answers
         };
     }
+
 }
 

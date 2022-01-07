@@ -20,7 +20,16 @@ export default {
     },
   },
   watch: {
-  
+    value: {
+      handler(val) {
+        if (val) {
+          this.editor.render(JSON.parse(JSON.stringify(val)));
+        } else {
+          this.editor.clear();
+        }
+      },
+      deep: true,
+    },
   },
   mounted() {
     this.editor = new EditorJS({
@@ -34,7 +43,8 @@ export default {
         checkbox: Checkbox,
         test: TestVue,
       },
-      data: this.value,
+      data: JSON.parse(JSON.stringify(this.value)),
+      //ata: this.value,
     });
   },
   data() {
@@ -46,7 +56,7 @@ export default {
     test() {},
     async save() {
       let data = await this.editor.save();
-      console.log(data);
+
       this.$emit("input", data);
     },
   },

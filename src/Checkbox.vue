@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-form>
-      <el-form-item label="[Radio] Question">
+      <el-form-item label="[Checkbox] Question">
         <el-input v-model="localData" />
       </el-form-item>
     </el-form>
