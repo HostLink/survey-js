@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import HLSurvey from "./Survey.vue";
+import HLSurvey from "./Survey";
 export default {
   name: "App",
   components: {
