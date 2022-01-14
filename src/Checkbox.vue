@@ -9,12 +9,14 @@
       <el-table-column width="55px">
         <template v-slot:header>
           <el-button
+            size="mini"
             @click="localAnswer.push({ value: '' })"
             icon="el-icon-plus"
           ></el-button>
         </template>
         <template v-slot="scope">
           <el-button
+            size="mini"
             icon="el-icon-minus"
             @click="localAnswer = localAnswer.filter((a) => a != scope.row)"
           >

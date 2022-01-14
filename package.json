@@ -1,5 +1,5 @@
 {
-  "name": "hostlink-survey-js",
+  "name": "@hostlink/survey-js",
   "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
