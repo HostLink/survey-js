@@ -11,7 +11,7 @@ export default class {
 
     constructor({ data }) {
         this.data = data;
-        this.value = data.value || "";
+        this.text = data.text || "";
     }
 
     render() {
@@ -26,7 +26,7 @@ export default class {
                 render: h => {
                     return h(Text, {
                         props: {
-                            value: self.value
+                            value: self.text
                         },
                         on: {
                             input(event) {
@@ -45,7 +45,7 @@ export default class {
 
     save() {
         return {
-            value: this.value
+            text: this.value
         };
     }
 }

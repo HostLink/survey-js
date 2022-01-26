@@ -39,10 +39,7 @@ export default class {
 
 
     save() {
-        return {
-            value: this.value.value,
-            answers: this.value.answers
-        };
+        return this.value;
     }
 
 }

@@ -10,7 +10,7 @@
         <template v-slot:header>
           <el-button
             size="mini"
-            @click="localAnswer.push({ value: '' })"
+            @click="localAnswer.push({ text: '' })"
             icon="el-icon-plus"
           ></el-button>
         </template>
@@ -24,7 +24,7 @@
         </template>
       </el-table-column>
       <el-table-column v-slot="scope">
-        <el-input v-model="scope.row.value"></el-input>
+        <el-input v-model="scope.row.text"></el-input>
       </el-table-column>
     </el-table>
   </div>
@@ -36,27 +36,27 @@ export default {
     value: {
       type: Object,
       default: () => ({
-        value: "",
+        text: "",
         answers: [],
       }),
     },
   },
   data() {
     return {
-      localData: this.value.value || "",
+      localData: this.value.text || "",
       localAnswer: this.value.answers || [],
     };
   },
   watch: {
     localData() {
       this.$emit("input", {
-        value: this.localData,
+        text: this.localData,
         answers: this.localAnswer,
       });
     },
     localAnswer() {
       this.$emit("input", {
-        value: this.localData,
+        text: this.localData,
         answers: this.localAnswer,
       });
     },

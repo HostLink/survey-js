@@ -26,26 +26,13 @@ export default {
     async save() {
       await this.$refs.survey.save();
       console.log(this.data);
+      this.c_data = Object.assign({}, this.data);
     },
     clear() {
       this.data = null;
     },
-
     load() {
-      this.data = {
-        time: 1641446283462,
-        blocks: [
-          {
-            id: "radio1",
-            type: "radio",
-            data: {
-              value: "hello",
-              answers: [{ value: "test1" }],
-            },
-          },
-        ],
-        version: "2.22.2",
-      };
+      this.data = Object.assign({}, this.c_data);
     },
   },
 };
