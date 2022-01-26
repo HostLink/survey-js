@@ -3722,7 +3722,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/@fortawesome/fontawesome-free/css/all.css
 var css_all = __webpack_require__("15f5");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2bf549d6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Survey.vue?vue&type=template&id=40288b46&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1c8703b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Survey.vue?vue&type=template&id=40288b46&
 var Surveyvue_type_template_id_40288b46_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div')}
 var staticRenderFns = []
 
@@ -3817,7 +3817,7 @@ function _createClass(Constructor, protoProps, staticProps) {
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2bf549d6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Rating.vue?vue&type=template&id=784fb6ed&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1c8703b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Rating.vue?vue&type=template&id=784fb6ed&
 var Ratingvue_type_template_id_784fb6ed_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-form',[_c('el-form-item',{attrs:{"label":"[Rating] Question"}},[_c('el-input',{model:{value:(_vm.localData),callback:function ($$v) {_vm.localData=$$v},expression:"localData"}})],1)],1)],1)}
 var Ratingvue_type_template_id_784fb6ed_staticRenderFns = []
 
@@ -4034,7 +4034,7 @@ var Rating_default = /*#__PURE__*/function () {
 }();
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2bf549d6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Text.vue?vue&type=template&id=4f8ecee6&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1c8703b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Text.vue?vue&type=template&id=4f8ecee6&
 var Textvue_type_template_id_4f8ecee6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-form',[_c('el-form-item',{attrs:{"label":"[Text] Question"}},[_c('el-input',{model:{value:(_vm.localData),callback:function ($$v) {_vm.localData=$$v},expression:"localData"}})],1)],1)],1)}
 var Textvue_type_template_id_4f8ecee6_staticRenderFns = []
 
@@ -4152,7 +4152,7 @@ var Text_default = /*#__PURE__*/function () {
 }();
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2bf549d6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Radio.vue?vue&type=template&id=67adec8b&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1c8703b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Radio.vue?vue&type=template&id=67adec8b&
 var Radiovue_type_template_id_67adec8b_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-form',[_c('el-form-item',{attrs:{"label":"[Radio] Question"}},[_c('el-input',{model:{value:(_vm.localData),callback:function ($$v) {_vm.localData=$$v},expression:"localData"}})],1)],1),_c('el-table',{attrs:{"data":_vm.localAnswer}},[_c('el-table-column',{attrs:{"width":"55px"},scopedSlots:_vm._u([{key:"header",fn:function(){return [_c('el-button',{attrs:{"size":"mini","icon":"el-icon-plus"},on:{"click":function($event){return _vm.localAnswer.push({ value: '' })}}})]},proxy:true},{key:"default",fn:function(scope){return [_c('el-button',{attrs:{"size":"mini","icon":"el-icon-minus"},on:{"click":function($event){_vm.localAnswer = _vm.localAnswer.filter(function (a) { return a != scope.row; })}}})]}}])}),_c('el-table-column',{scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_c('el-input',{model:{value:(scope.row.value),callback:function ($$v) {_vm.$set(scope.row, "value", $$v)},expression:"scope.row.value"}})]}}])})],1)],1)}
 var Radiovue_type_template_id_67adec8b_staticRenderFns = []
 
@@ -4306,7 +4306,7 @@ var Radio_default = /*#__PURE__*/function () {
 }();
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2bf549d6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Checkbox.vue?vue&type=template&id=5cb9f96d&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1c8703b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Checkbox.vue?vue&type=template&id=5cb9f96d&
 var Checkboxvue_type_template_id_5cb9f96d_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-form',[_c('el-form-item',{attrs:{"label":"[Checkbox] Question"}},[_c('el-input',{model:{value:(_vm.localData),callback:function ($$v) {_vm.localData=$$v},expression:"localData"}})],1)],1),_c('el-table',{attrs:{"data":_vm.localAnswer}},[_c('el-table-column',{attrs:{"width":"55px"},scopedSlots:_vm._u([{key:"header",fn:function(){return [_c('el-button',{attrs:{"size":"mini","icon":"el-icon-plus"},on:{"click":function($event){return _vm.localAnswer.push({ text: '' })}}})]},proxy:true},{key:"default",fn:function(scope){return [_c('el-button',{attrs:{"size":"mini","icon":"el-icon-minus"},on:{"click":function($event){_vm.localAnswer = _vm.localAnswer.filter(function (a) { return a != scope.row; })}}})]}}])}),_c('el-table-column',{scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_c('el-input',{model:{value:(scope.row.text),callback:function ($$v) {_vm.$set(scope.row, "text", $$v)},expression:"scope.row.text"}})]}}])})],1)],1)}
 var Checkboxvue_type_template_id_5cb9f96d_staticRenderFns = []
 

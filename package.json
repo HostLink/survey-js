@@ -4,10 +4,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib ./src/index.js",
-    "lint": "vue-cli-service lint",
-    "publish": "npm run build && npm publish"
+    "lint": "vue-cli-service lint"
   },
-  "main": "dist/hostlink-survey-js.common.js",
+  "main": "dist/survey-js.common.js",
   "dependencies": {
     "@editorjs/editorjs": "^2.22.2",
     "@editorjs/header": "^2.6.2",
