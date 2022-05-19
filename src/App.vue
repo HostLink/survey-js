@@ -2,6 +2,7 @@
   <div id="app">
     Test
 
+
     <hl-survey ref="survey" v-model="data"></hl-survey>
     <button @click="save">Save</button>
     <button @click="load">Load</button>

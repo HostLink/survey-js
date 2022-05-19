@@ -30,8 +30,7 @@ export default class {
                         },
                         on: {
                             input(event) {
-                                console.log(event);
-                                self.value = event;
+                                self.text = event;
                             }
                         }
                     });
@@ -45,7 +44,7 @@ export default class {
 
     save() {
         return {
-            text: this.value
+            text: this.text
         };
     }
 }
